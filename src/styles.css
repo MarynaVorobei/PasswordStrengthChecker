@@ -7,8 +7,8 @@
 body {
   font-family: "Roboto", sans-serif;
   padding: 50px;
-  background: #cbddf7;
-  color: #1f2329;
+  background: #555c65;
+  color: #fff;
   min-height: 100vh;
 }
 
@@ -17,10 +17,13 @@ h1 {
 }
 
 form {
-  width: 330px;
-  margin: 40px auto 0 auto;
-  border: thin solid #d4d4d4;
+  max-width: 380px;
+  margin: 40px auto 0;
+
   padding: 30px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 10px rgb(65 50 100 / 8%);
 }
 
 label {
@@ -29,6 +32,7 @@ label {
   margin: 5px auto;
   color: #777;
 }
+
 input {
   width: 100%;
   display: block;
@@ -47,17 +51,17 @@ footer {
   text-align: center;
   font-size: 12px;
   margin: 40px 0;
-  color: #777;
+  color: #fff;
 }
 
 a {
   font-size: 12px;
   text-decoration: none;
-  color: #1f2329;
+  color: #cad0d6;
 }
 
 a:hover {
-  color: #777;
+  color: #fff;
 }
 .easy,
 .medium,
@@ -76,4 +80,26 @@ a:hover {
   margin-top: 10px;
   transition: width 0.2s;
   border-radius: 3px;
+}
+
+@media (max-width: 600px) {
+  form {
+    max-width: 500px;
+  }
+
+  footer,
+  a {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  form {
+    max-width: 400px;
+  }
+
+  footer,
+  a {
+    font-size: 8px;
+  }
 }
