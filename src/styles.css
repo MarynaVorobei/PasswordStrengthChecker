@@ -43,6 +43,22 @@ input {
   background-color: #fafafa;
 }
 
+footer {
+  text-align: center;
+  font-size: 12px;
+  margin: 40px 0;
+  color: #777;
+}
+
+a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #1f2329;
+}
+
+a:hover {
+  color: #777;
+}
 .easy,
 .medium,
 .strong {
